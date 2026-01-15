@@ -1,0 +1,120 @@
+/* Focus state for input and textarea */
+input:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Invalid state */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+/* Valid state */
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+/* Button hover state */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Radio button checked state */
+.radio-group input[type="radio"]:checked {
+    border-color: #4CAF50;
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Label text color when radio is checked */
+.radio-group input[type="radio"]:checked + label {
+    color: #4CAF50;
+}
+
+/* First input field styling */
+input:first-of-type {
+    border-radius: 8px;
+}
+
+.container {
+    background-color: #ffffff1a;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px black;  
+}
+
+.center {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+fieldset legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+textarea,
+select {
+  background-color: #ffffff1a;
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  vertical-align: bottom;
+}
+
+.radio-group input[type="radio"]::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+}
+
+.radio-group input[type="radio"]:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  background-color: lightgreen;
+}
+
+.submit-btn {
+  cursor: pointer;
+  background-color: green;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  display: block;
+  margin: auto;
+}
